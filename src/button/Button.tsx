@@ -24,7 +24,7 @@ const Button = (props: IButtonProps) => {
       onMouseEnter={() => setPdr(10)}
       onMouseLeave={() => setPdr(0)}
     >
-      <div className="flex flex-row items-center justify-between">
+      <div className="flex flex-row items-center justify-between align-middle">
         <motion.div
           initial={{ paddingRight: 0 }}
           animate={{ paddingRight: pdr }}
@@ -33,7 +33,7 @@ const Button = (props: IButtonProps) => {
           {props.children}
         </motion.div>
         <div>
-          <svg
+          {/* <svg
             className="ml-2 size-6"
             fill="none"
             stroke="currentColor"
@@ -46,6 +46,9 @@ const Button = (props: IButtonProps) => {
               strokeWidth="2"
               d="M9 5l7 7-7 7"
             />
+          </svg> */}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" className="ml-2 size-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
           </svg>
         </div>
       </div>
