@@ -8,7 +8,7 @@ const VerticalFeatures = () => (
   >
     <VerticalFeatureRow
       title="Determine Eligibility Instantly"
-      description="Kinara extracts eligibility criteria so you can quickly determine if this RFP is for you without having to comb through a 98 page PDF."
+      description="Kinara extracts eligibility criteria so you can quickly determine if this RFP is for you without combing through complex 100+ page PDFs."
       image="/assets/images/questionnaire.png"
       imageAlt="eligibility criteria"
     />
