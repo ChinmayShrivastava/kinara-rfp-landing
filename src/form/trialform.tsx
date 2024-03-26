@@ -57,7 +57,7 @@ const TrialForm = ( { ispdf , istags } : { ispdf?: boolean, istags?: boolean }) 
   }
 
   return (
-    <form className='flex w-full flex-col items-center justify-center' onSubmit={handleSubmit}>
+    <form className='items-left flex w-full flex-col justify-start' onSubmit={handleSubmit}>
       <TextField
         id="outlined-basic"
         label="Email ID" 
@@ -68,7 +68,7 @@ const TrialForm = ( { ispdf , istags } : { ispdf?: boolean, istags?: boolean }) 
         value={formState.email_id}
         onChange={handleChange}
         required
-        className='m-2 w-full'
+        className='my-2 w-full'
       />
       { ispdf &&
         <TextField
@@ -80,7 +80,7 @@ const TrialForm = ( { ispdf , istags } : { ispdf?: boolean, istags?: boolean }) 
         placeholder="PDF URL"
         value={formState.pdf_url}
         onChange={handleChange}
-        className='m2 w-full'
+        className='my-2 w-full'
       />}
       { istags &&
         <TextField  
@@ -92,9 +92,9 @@ const TrialForm = ( { ispdf , istags } : { ispdf?: boolean, istags?: boolean }) 
         placeholder="Separate tags with commas"
         value={formState.search_tags}
         onChange={handleChange}
-        className='m-2 w-full'
+        className='my-2 w-full'
       />}
-      <button type="submit" className='m-4 flex w-full flex-row justify-start'>
+      <button type="submit" className='my-4 flex flex-row'>
         <Button>
           Submit
         </Button>
