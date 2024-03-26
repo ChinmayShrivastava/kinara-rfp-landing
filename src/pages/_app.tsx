@@ -14,7 +14,7 @@ import { Logo } from '../templates/Logo';
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <div>
     <Background color="">
-      <Grid rows={9} />
+      <Grid rows={8} />
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
