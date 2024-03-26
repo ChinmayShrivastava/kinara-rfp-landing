@@ -57,7 +57,7 @@ export function Grid({ columns }: { columns: number }) {
         ))}
       </div>
       {/* set pointer events to none */}
-      <div className="pointer-events-none absolute left-0 top-0 z-[-1] size-full bg-gradient-to-b from-transparent to-white">
+      <div className="pointer-events-none absolute left-0 top-0 z-[-1] size-full h-[90vh] bg-gradient-to-b from-transparent to-white">
       </div>
     </>
   );
