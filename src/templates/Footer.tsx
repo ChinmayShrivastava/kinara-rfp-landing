@@ -9,7 +9,7 @@ const Footer = () => (
     <Section>
       <CenteredFooter logo={<Logo />}>
         <></>
-        <p style={{ color: 'darkgrey' }}>Made in America by engineers from Brown University and Microsoft </p>
+        <p className='text-sm text-gray-700'>Made in America by engineers from Brown University and Microsoft </p>
       </CenteredFooter>
     </Section>
   </Background>

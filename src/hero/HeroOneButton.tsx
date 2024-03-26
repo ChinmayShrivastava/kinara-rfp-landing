@@ -11,7 +11,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
     <h1 className="whitespace-pre-line text-[2em] text-gray-900 sm:text-[4em] sm:leading-hero">
       {props.title}
     </h1>
-    <div className="sm:text-2x mb-16 mt-4 text-2xl text-gray-500">{props.description}</div>
+    <div className="sm:text-2x mb-8 mt-4 text-2xl text-gray-500">{props.description}</div>
     {props.button}
   </header>
 );

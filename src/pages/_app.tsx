@@ -8,6 +8,7 @@ import { NavbarTwoColumns } from '@/navigation/NavbarTwoColumns';
 
 import { Background } from '../background/Background';
 import { Section } from '../layout/Section';
+import { Footer } from '../templates/Footer';
 import { Logo } from '../templates/Logo';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
@@ -23,6 +24,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       </Section>
       <Component {...pageProps} />
     </Background>
+    <Footer />
   </div>
 );
 
