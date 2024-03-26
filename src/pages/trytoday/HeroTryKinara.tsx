@@ -36,4 +36,4 @@ const Hero = () => (
   </Background>
 );
 
-export { Hero };
+export default Hero;

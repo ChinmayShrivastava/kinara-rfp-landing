@@ -1,4 +1,4 @@
-import { Hero } from "./HeroTryKinara";
+import Hero from "./HeroTryKinara";
 
 const TryToday = () => {
   return (
