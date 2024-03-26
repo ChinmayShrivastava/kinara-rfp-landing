@@ -10,7 +10,7 @@ type ICTABannerProps = {
 
 const CTABanner = (props: ICTABannerProps) => (
   <div className="relative flex w-full flex-col overflow-hidden rounded-md border-[2px] p-4 text-center sm:flex-row sm:items-center sm:justify-between sm:p-12 sm:text-left">
-    <Grid columns={40} />
+    <Grid rows={2} />
     <div className=" flex w-full flex-col items-center justify-between sm:flex-row">
       <div className="px-4 text-xl sm:px-0 sm:text-2xl">
         <div className="text-gray-900">{props.title}</div>

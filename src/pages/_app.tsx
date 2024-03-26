@@ -14,11 +14,13 @@ import { Logo } from '../templates/Logo';
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <div>
     <Background color="">
-      <Grid columns={40} />
+      <Grid rows={9} />
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
-            <Link href="/trytoday">Try Today</Link>
+            <Link href="/trytoday" className='rounded-full border-[2px] border-black px-4 py-2'>
+              Try Today
+            </Link>
           </li>
         </NavbarTwoColumns>
       </Section>

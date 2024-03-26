@@ -1,4 +1,5 @@
 import className from 'classnames';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 type IVerticalFeatureRowProps = {
@@ -33,7 +34,9 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       </div>
 
       <div className="flex w-full flex-col items-center justify-center rounded-md p-6 sm:h-full sm:w-1/2">
-        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
+        <Image src={`${router.basePath}${props.image}`} alt={props.imageAlt}
+        width={400} height={400}
+        />
       </div>
     </div>
   );

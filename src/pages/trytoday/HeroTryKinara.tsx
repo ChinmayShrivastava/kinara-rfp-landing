@@ -12,12 +12,12 @@ const Hero = () => (
   <Background color="">
     <div className="relative">
       <Section yPadding="pt-20 pb-32">
-        <div className='flex w-full flex-row justify-between'>
-          <div className='flex w-1/2 flex-col justify-start'>
+        <div className='flex w-full flex-col justify-between lg:flex-row'>
+          <div className='flex w-full flex-col justify-center lg:w-1/2'>
             <HeroOneButton
               title={
                 <>
-                  <span className="text-6xl">
+                  <span className="text-4xl lg:text-6xl">
                   {'Comprehensive Outlines generated in minutes.'}
                   </span>
                 </>
@@ -31,12 +31,14 @@ const Hero = () => (
                 <></>
               }
             />
-            <div className="w-4/5">
+            <div className="w-full lg:w-4/5">
               <TrialForm ispdf />
             </div>
           </div>
-          <div className='relative flex w-1/2 flex-col justify-between'>
-            <Image src='/assets/images/generated_outline.png' alt='hero' width='500' height='500' className='z-[-1]' />
+          <div className='relative mt-16 flex flex-col items-end justify-between lg:mt-0 lg:w-1/2'>
+            <div className='flex w-full items-center justify-center'>
+              <Image src='/assets/images/generated_outline.png' alt='hero' width='1024' height='600' className='z-[-1]' />
+            </div>
             {/* gradient div over it */}
             <div className='absolute z-0 size-full bg-gradient-to-t from-white via-transparent to-transparent'></div>
           </div>
@@ -45,10 +47,10 @@ const Hero = () => (
     </div>
     <div className="relative">
       <Section yPadding="pt-20 pb-32">
-        <div className='flex w-full flex-row'>
-          <div className='flex w-1/2 flex-col justify-between'>
+        <div className='flex w-full flex-col lg:flex-row'>
+          <div className='flex w-full flex-col justify-between lg:w-1/2'>
           </div>
-          <div className='flex w-1/2 flex-col justify-start'>
+          <div className='flex w-full flex-col justify-start lg:w-1/2'>
             <HeroOneButton
               title={
                 <>

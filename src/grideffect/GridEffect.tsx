@@ -17,7 +17,7 @@ export function GridCell({ isHovered }: { isHovered: boolean }) {
   );
 }
 
-export function Grid({ columns }: { columns: number }) {
+export function Grid({ rows }: { rows: number }) {
   const cellRefs = useRef<Array<HTMLDivElement | null>>([]);
   const [hoveredCell, setHoveredCell] = useState<number | null>(null);
 
@@ -44,9 +44,9 @@ export function Grid({ columns }: { columns: number }) {
   return (
     <>
       <div className="absolute left-0 top-0 z-[-10] flex w-full flex-col gap-1 overflow-hidden">
-        {Array.from({ length: 6 }).map((__, i) => (
+        {Array.from({ length: rows }).map((__, i) => (
           <div key={i} className="relative left-0 top-0 z-[-10] flex w-full flex-row gap-1 overflow-hidden">
-            {Array.from({ length: columns }).map((_, index) => (
+            {Array.from({ length: 40 }).map((_, index) => (
               <div key={i * 40 + index} ref={(el) => {cellRefs.current[i * 40 + index] = el;}}>
                 <GridCell
                 isHovered={hoveredCell === i * 40 + index}
@@ -57,7 +57,7 @@ export function Grid({ columns }: { columns: number }) {
         ))}
       </div>
       {/* set pointer events to none */}
-      <div className="pointer-events-none absolute left-0 top-0 z-[-1] size-full h-[90vh] bg-gradient-to-b from-transparent to-white">
+      <div className="pointer-events-none absolute left-0 top-0 z-[-1] size-full h-screen bg-gradient-to-b from-transparent to-white">
       </div>
     </>
   );

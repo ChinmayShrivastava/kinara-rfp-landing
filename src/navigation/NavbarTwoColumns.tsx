@@ -7,16 +7,16 @@ type INavbarProps = {
 };
 
 const NavbarTwoColumns = (props: INavbarProps) => (
-  <div className="flex flex-wrap items-center justify-between">
+  <div className="flex w-full flex-row items-center justify-between">
     <div>
       <Link href="/">{props.logo}</Link>
     </div>
 
-    <nav>
-      <ul className="navbar flex items-center text-xl font-medium text-gray-800">
+    <div>
+      <ul className="flex items-center text-xl font-medium text-gray-800">
         {props.children}
       </ul>
-    </nav>
+    </div>
 
     <style jsx>
       {`
