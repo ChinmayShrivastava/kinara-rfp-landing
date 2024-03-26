@@ -1,4 +1,5 @@
 
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 import { HeroOneButton } from '@/hero/HeroOneButton';
@@ -36,9 +37,14 @@ const Hero = () => (
             </div>
           </div>
           <div className='relative mt-16 flex flex-col items-end justify-between lg:mt-0 lg:w-1/2'>
-            <div className='flex w-full items-center justify-center'>
+            <motion.div
+            // slide up
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className='flex w-full items-center justify-center'>
               <Image src='/assets/images/generated_outline.png' alt='hero' width='1024' height='600' className='z-[-1]' />
-            </div>
+            </motion.div>
             {/* gradient div over it */}
             <div className='absolute z-0 size-full bg-gradient-to-t from-white via-transparent to-transparent'></div>
           </div>
