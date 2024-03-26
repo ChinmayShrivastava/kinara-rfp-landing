@@ -29,7 +29,7 @@ const TrialForm = ( { ispdf , istags } : { ispdf?: boolean, istags?: boolean }) 
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const response = await fetch(`${process.env.API_URL}`, {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`, {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${process.env.PAT}`, // {token} should be replaced with the actual token
