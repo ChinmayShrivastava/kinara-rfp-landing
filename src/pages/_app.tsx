@@ -18,7 +18,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
             <Link href="/trytoday">Try Today</Link>
-            
           </li>
         </NavbarTwoColumns>
       </Section>
