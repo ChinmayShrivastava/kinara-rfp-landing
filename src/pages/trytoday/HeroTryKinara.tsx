@@ -53,26 +53,36 @@ const Hero = () => (
     </div>
     <div className="relative">
       <Section yPadding="pt-20 pb-32">
-        <div className='flex w-full flex-col lg:flex-row'>
-          <div className='flex w-full flex-col justify-between lg:w-1/2'>
+        <div className='flex w-full flex-col-reverse lg:flex-row'>
+          <div className='relative mt-16 flex flex-col items-end justify-between lg:mt-0 lg:w-1/2'>
+            <motion.div
+            // slide up
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className='flex w-full items-center justify-center'>
+              <Image src='/assets/images/search_results.png' alt='hero' width='1024' height='600' className='z-[-1]' />
+            </motion.div>
+            {/* gradient div over it */}
+            <div className='absolute z-0 size-full bg-gradient-to-t from-white via-transparent to-transparent'></div>
           </div>
           <div className='flex w-full flex-col justify-start lg:w-1/2'>
             <HeroOneButton
               title={
-                <>
+                <div className='w-full lg:ml-16'>
                   {'Hand picked bids, delivered to your Inbox!'}
-                </>
+                </div>
               }
               description={
-                <>
+                <div className='w-full lg:ml-16'>
                   {'Tell us a bit about what your company does and what kind of contracts you’re looking for. We’ll email you personalized bids every day. '}
-                </>
+                </div>
               }
               button={
                 <></>
               }
             />
-            <div className="">
+            <div className="w-full lg:ml-16 lg:w-4/5">
               <TrialForm istags />
             </div>
           </div>
