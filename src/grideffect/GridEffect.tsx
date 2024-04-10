@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -21,6 +23,7 @@ export function Grid({ rows }: { rows: number }) {
   const cellRefs = useRef<Array<HTMLDivElement | null>>([]);
   const [hoveredCell, setHoveredCell] = useState<number | null>(null);
   const gridHeight = 100 * (rows+0.5);
+  
 
   const handleMouseMove = (e: MouseEvent) => {
     const foundCell = cellRefs.current.find((currentCell) => {
@@ -58,7 +61,10 @@ export function Grid({ rows }: { rows: number }) {
         ))}
       </div>
       {/* set pointer events to none */}
-      <div className={"pointer-events-none absolute left-0 top-0 z-[-1] size-full bg-gradient-to-b from-transparent via-white to-white"} style={{ height: gridHeight }}>
+      <div className={"pointer-events-none absolute left-0 top-0 z-[-1] size-full bg-gradient-to-b from-transparent via-white to-white"} 
+      style={{ 
+        height: gridHeight,
+      }}>
       </div>
     </>
   );

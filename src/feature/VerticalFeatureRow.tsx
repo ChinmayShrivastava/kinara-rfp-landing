@@ -19,7 +19,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
     {
       'flex-row-reverse': props.reverse,
     },
-    'p-4 border-[2px] rounded-md shadow-xl sm:h-[400px] flex flex-row justify-between items-center bg-white',
+    'p-4 border-[2px] rounded-md shadow-xl sm:h-[600px] flex flex-row justify-between items-center bg-white',
   );
 
   const router = useRouter();
@@ -34,8 +34,10 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       </div>
 
       <div className="flex w-full flex-col items-center justify-center rounded-md p-6 sm:h-full sm:w-1/2">
-        <Image src={`${router.basePath}${props.image}`} alt={props.imageAlt}
-        width={400} height={400}
+        <Image src={`${router.basePath}${props.image}`} 
+        alt={props.imageAlt}
+        width={1200}
+        height={800}
         />
       </div>
     </div>

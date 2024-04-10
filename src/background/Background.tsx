@@ -6,7 +6,8 @@ type IBackgroundProps = {
 };
 
 const Background = (props: IBackgroundProps) => (
-  <div className={`relative ${ props.color}`}>{props.children}</div>
+  <div className={`relative ${ props.color}`}
+  >{props.children}</div>
 );
 
 export { Background };

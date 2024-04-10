@@ -12,11 +12,11 @@ const NavbarTwoColumns = (props: INavbarProps) => (
       <Link href="/">{props.logo}</Link>
     </div>
 
-    <div>
+    {/* <div>
       <ul className="flex items-center text-xl font-medium text-gray-800">
         {props.children}
       </ul>
-    </div>
+    </div> */}
 
     <style jsx>
       {`

@@ -7,22 +7,22 @@ const VerticalFeatures = () => (
     description="We break-down complex RFP solicitations and generate comprehensive outlines, checklists, and quality content so you can respond to RFPs in hours, not weeks."
   >
     <VerticalFeatureRow
-      title="Determine Eligibility Instantly"
-      description="Kinara extracts eligibility criteria so you can quickly determine if this RFP is for you without combing through complex 100+ page PDFs."
-      image="/assets/images/questionnaire.png"
+      title="Teach Kinara Abour your Organization"
+      description="Kinara takes in your past RFX submissions and extracts all the relevant information to understand your organization’s strengths and weaknesses."
+      image="/assets/images/upload_past_submissions.png"
       imageAlt="eligibility criteria"
     />
     <VerticalFeatureRow
-      title="Comprehensive Compliance Checklist"
-      description="Kinara compiles a bullet-proof checklist in 5 minutes so your team knows exactly what’s required and splits the work accordingly."
-      image="/assets/images/table.png"
+      title="Get Recomendations"
+      description="Kinara searches through its database of active RFPs and provides you with a curated list of RFPs that match your strengths."
+      image="/assets/images/rfx_recommendations.png"
       imageAlt="compliance checklist"
       reverse
     />
     <VerticalFeatureRow
-      title="Apply with Confidence"
-      description="Kinara compares your final proposal with the original request, ensuring all important points are covered so you can submit a strong bid."
-      image="/assets/images/review.png"
+      title="Generate Draft in Minutes"
+      description="Kinara then generates a draft response to the RFP, which you can review, edit and submit."
+      image="/assets/images/generated_draft.png"
       imageAlt="review proposal"
     />
   </Section>
