@@ -12,7 +12,7 @@ const Hero = () => (
         <HeroOneButton
           title={
             <>
-              {'Apply to RFPs in hours\n'}
+              {'Apply to RFPs in hours,\n'}
               <span className="font-bold">not weeks.</span>
             </>
           }

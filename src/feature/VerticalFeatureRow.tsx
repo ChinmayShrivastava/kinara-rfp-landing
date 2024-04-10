@@ -19,7 +19,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
     {
       'flex-row-reverse': props.reverse,
     },
-    'p-4 border-[2px] rounded-md shadow-xl sm:h-[600px] flex flex-row justify-between items-center bg-white',
+    'p-4 border-[2px] rounded-md shadow-xl sm:h-[400px] flex flex-row justify-between items-center bg-white',
   );
 
   const router = useRouter();
