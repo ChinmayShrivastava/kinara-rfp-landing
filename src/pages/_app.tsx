@@ -7,6 +7,7 @@ import { Grid } from '@/grideffect/GridEffect';
 import { NavbarTwoColumns } from '@/navigation/NavbarTwoColumns';
 
 import { Background } from '../background/Background';
+import { Button } from '../button/Button';
 import { Section } from '../layout/Section';
 import { Footer } from '../templates/Footer';
 import { Logo } from '../templates/Logo';
@@ -18,8 +19,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
-            <Link href="/trytoday" className='rounded-full border-[2px] border-black px-4 py-2'>
-              Try Today
+            <Link href="https://calendly.com/rahuldey700/demo-nucleus">
+              <Button>
+                Try Today
+              </Button>
             </Link>
           </li>
         </NavbarTwoColumns>
