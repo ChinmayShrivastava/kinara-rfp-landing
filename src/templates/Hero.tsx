@@ -12,8 +12,8 @@ const Hero = () => (
         <HeroOneButton
           title={
             <>
-              {'Apply to RFPs in hours,\n'}
-              <span className="font-bold">not weeks.</span>
+              {'Apply to RFPs in '}<span className="font-bold">hours,<br/></span>
+              {'not '}<span className="font-bold">weeks.</span>
             </>
           }
           description="Kinara uses your past applications to search best matches and generates drafts in minutes."

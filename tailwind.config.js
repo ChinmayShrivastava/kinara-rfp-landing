@@ -14,6 +14,9 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      fontFamily: {
+        'space-grotesk': ['Space Grotesk', 'sans-serif'],
+      },
       boxShadow: {
         // make a white shadow gaussian blur
         'white-shadow': '0 0 0 1px rgba(255, 255, 255, 0.5)',
